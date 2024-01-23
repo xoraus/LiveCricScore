@@ -23,8 +23,6 @@ public class CricketController {
         this.cricketService = cricketService;
     }
 
-    // api for getting live matches
-
     @GetMapping("/live")
     public ResponseEntity<?> getLiveMatchScores() throws InterruptedException {
         System.out.println("getting live match");
